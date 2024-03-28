@@ -1,11 +1,9 @@
 <?php
 
-//  #Créez une classe Vehicule parenté avec une méthode demarrer() et faites en sorte que la classe Voiture hérite de la classe Vehicule.
+//   4 #Créez une classe Vehicule parenté avec une méthode demarrer() et faites en sorte que la classe Voiture hérite de la classe Vehicule.
 class Vehicule {
 
-    function  demarrer(){
-
-    }
+    function  demarrer(){}
 }
 
 class Voiture extends Vehicule {
@@ -35,7 +33,7 @@ class Voiture extends Vehicule {
     }
 
     function afficher_detail(){
-        echo "Marque : {$this->marque}, Modèle : {$this->modele}, Kilométrage : {$this->kilometrage} km, Année : {$this->annee}<br>";
+        echo "Marque : {$this->marque}, Modèle : {$this->modele}, Kilométrage : {$this->kilometrage} km,\n Année : {$this->annee}";
     }
 }
 
