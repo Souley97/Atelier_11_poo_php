@@ -25,6 +25,15 @@ class Voiture{
 }
 
 
-/**   Instanciez un objet de la classe Voiture avec les valeurs de votre choix
+/** 2  Instanciez un objet de la classe Voiture avec les valeurs de votre choix
  *  pour les propriétés et affichez les détails de la voiture.
 **/ 
+
+$voiture = new Voiture("Toyota", "Corolla", 75000, 2018);
+$voiture2 = new Voiture("Honda", "Civic", 60000, 2016);
+
+
+$voiture->afficher_detail();
+$voiture2->afficher_detail();
+
+
