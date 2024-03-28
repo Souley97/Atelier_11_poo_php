@@ -6,40 +6,35 @@
 class Vehicule {
     public $marque;
     public $modele;
-
     // Constructeur pour initialiser les propriétés
     function __construct($marque, $modele) {
         $this->marque = $marque;
         $this->modele = $modele;
     }
-
     // Méthode pour afficher les détails du véhicule
     function afficher_detail() {
-        echo "Marque : {$this->marque}, Modèle : {$this->modele}<br>";
+        echo "Marque : {$this->marque}, Modèle : {$this->modele}\n";
     }
 }
 
 class Moto extends Vehicule {
     protected $type;
-
     // Constructeur pour initialiser les propriétés spécifiques à la moto
-    public function __construct($marque, $modele, $type) {
-        
+    public function __construct($marque, $modele, $type) {    
         // Appel de la méthode Magic __construct de la classe parente Vehicule
         parent::__construct($marque, $modele);
         $this->type = $type;
     }
-
     // Méthode pour afficher les détails spécifiques à la moto
     public function afficher_detail() {
         // Appel de la méthode afficher_detail de la classe parente Vehicule
         parent::afficher_detail();
-        echo "Type de carburant : {$this->type}<br>";
+        echo "Type de carburant : {$this->type}\n";
     }
 }
-
 // Création d'une instance d'une moto électrique
 $motoElectrique = new Moto("Honda", "CBR500R 2024", "Électrique");
-
+$motoElectrique2 = new Moto("Yamakh", "YZF-R1 2022", "Électrique");
 // Affichage des détails de la moto électrique
-$motoElectrique->afficher_detail();
+// $motoElectrique->afficher_detail();
+$motoElectrique2->afficher_detail();
