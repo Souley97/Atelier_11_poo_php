@@ -1,6 +1,6 @@
 <?php
 
-// Créez une classe Vehicule parenté avec une méthode demarrer() et faites en sorte que la classe Voiture hérite de la classe Vehicule.
+//  #Créez une classe Vehicule parenté avec une méthode demarrer() et faites en sorte que la classe Voiture hérite de la classe Vehicule.
 class Vehicule {
 
     function  demarrer(){
